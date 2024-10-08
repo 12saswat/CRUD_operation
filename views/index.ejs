@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>create</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="w-full h-screen justify-between bg-zinc-900">
+      <div>
+        <a href="/users">
+          <h1
+            class="text-blue-700 font-bold px-10 text-2xl hover:text-blue-800 pt-3"
+          >
+            All users
+          </h1>
+        </a>
+      </div>
+      <div class="w-full">
+        <h1 class="text-white font-bold px-10 text-4xl pt-10">Create user</h1>
+        <form
+          method="post"
+          class="flex-col flex gap-10 pl-5 pt-10 w-5/12"
+          action="/create"
+        >
+          <input
+            class="px-3 py-2 rounded-md bg-transparent border-2 border-zinc-800 flex-col text-white outline-none"
+            type="text"
+            name="name"
+            placeholder="name"
+          />
+          <input
+            class="px-3 py-2 rounded-md bg-transparent border-2 border-zinc-800 flex-col text-white outline-none"
+            type="text"
+            name="gender"
+            placeholder="Gender"
+          />
+
+          <input
+            class="px-3 py-2 rounded-md bg-transparent border-2 border-zinc-800 flex-col text-white outline-none"
+            type="Number"
+            name="mobileNumber"
+            placeholder="mobileNumber"
+          />
+          <input
+            class="px-3 py-2 rounded-md bg-transparent border-2 border-zinc-800 flex-col text-white outline-none"
+            type="number"
+            name="age"
+            placeholder="age"
+          />
+          <input
+            class="bg-blue-700 px-5 py-2 rounded-md text-white cursor-pointer hover:bg-blue-900"
+            type="submit"
+            value="Create User"
+          />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
